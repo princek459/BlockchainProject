@@ -69,20 +69,20 @@
 
 /* Text Colors */
 
-.text-primary,
+
 .text-primary {
     color: var(--primary-color);
 }
-.text-secondary,
+
 .text-secondary {
     color: var(--secondary-color);
 }
-.text-dark,
+
 .text-dark {
     color: var(--dark-color);
 }
 
-.text-light,
+
 .text-light {
     color: var(--light-color);
 }
