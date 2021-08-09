@@ -27,10 +27,10 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Info</a></li>
-                    <li><a href="docs.html">Documentation</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li><a href="Contact.html">Contacts</a></li>
+                    <li><a href="features.html">Projects</a></li>
+                    <li><a href="docs.html">Subscription</a></li>
+                    <li><a href="crypto.html">crypto</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,12 +46,20 @@
                     all the exciting new innovations seen across the
                     Blockchain world.
                 </p>
-                    <a href="Contact.html" class="btn btn-outline"> Read More </a>
+                    <a href="docs.html" class="btn btn-outline"> Read More </a>
             </div>
 
             <div class="showcase-form card">
                 <h2>Subscription Form</h2>
-                <form>
+
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                      </p>
+
+
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -70,22 +78,23 @@
     <section class="stats">
         <div class="container">
             <h3 class="stats-heading text-center my-1">
-                Welcome to BlockLearn the website to teach you about
-                    all the exciting new innovations.
+                This website has various features such as Blockchain projects,
+                Cryptocurrency News and a regular Bi-weekly Newsletter with all
+                the new relevant Blockchain & Cryptocurrency news across the globe.
             </h3>
 
             <div class="grid grid-3 text-center my-4">
                 <div>
                     <i class="fas fa-server fa-3x"></i>
-                    <h3> asdfsdfsfs</h3>
-                    <p class="text-secondary">Deployments</p>
+                    <h3> Blockchain Projects</h3>
+                    <a href="Defi.html" class="btn btn-dark"> Read More</a>
                 </div>
                 <div><i class="fas fa-upload fa-3x"></i>
-                    <h3> srygdhbsvc</h3>
-                    <p class="text-secondary">Deployments</p></div>
+                    <h3> CryptoCurrencies</h3>
+                    <a href=".html" class="btn btn-dark"> Read More</a></div>
                 <div><i class="fas fa-project-diagram fa-3x"></i>
-                    <h3> paifsofjsf</h3>
-                    <p class="text-secondary">Deployments</p></div>
+                    <h3> Newsletter</h3>
+                    <a href="docs.html" class="btn btn-dark"> Read More</a></div>
             </div>
         </div>
     </section>
@@ -115,47 +124,7 @@
         </div>
     </section>
 
-    <!-- images and crypto section -->
-
-    <section class="languages">
-        <h2 class="md text-center my-2">
-            Latest CryptoCurrencies
-        </h2>
-        <div class="container flex">
-            <div class="card">
-                <h4>crypto</h4>
-                <img src="images/logos/clojure.png" alt="">
-            </div>
-            <div class="card">
-                <h4>crypto</h4>
-                <img src="images/logos/csharp.png" alt="">
-            </div>
-            <div class="card">
-                <h4>crypto</h4>
-                <img src="images/logos/go.png" alt="">
-            </div>
-            <div class="card">
-                <h4>crypto</h4>
-                <img src="images/logos/node.png" alt="">
-            </div>
-            <div class="card">
-                <h4>crypto</h4>
-                <img src="images/logos/php.png" alt="">
-            </div>
-            <div class="card">
-                <h4>crypto</h4>
-                <img src="images/logos/python.png" alt="">
-            </div>
-            <div class="card">
-                <h4>crypto</h4>
-                <img src="images/logos/ruby.png" alt="">
-            </div>
-            <div class="card">
-                <h4>crypto</h4>
-                <img src="images/logos/scala.png" alt="">
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
 
