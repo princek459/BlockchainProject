@@ -20,7 +20,8 @@
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar start -->
+
     <div class="navbar"> 
         <div class="container flex">
             <h1 class="logo"> Blockchain </h1>
@@ -36,9 +37,19 @@
         </div>
     </div>
 
-    <!-- main body showcase -->
+    <!-- Navigation Bar End -->
+
+
+
+
+    <!-- main body first section -->
+
     <section class="showcase">
+
+        <!-- Container for the section  to separate the Divs-->
         <div class="container grid">
+
+            
             <div class="showcase-text">
                 <h1>Blockchain Technology</h1>
                 <p>
@@ -49,11 +60,13 @@
                     <a href="docs.html" class="btn btn-outline"> Read More </a>
             </div>
 
+            <!-- Card Section for the Subscription form.-->
             <div class="showcase-form card">
                 <h2>Subscription Form</h2>
 
                 <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
 
+                    <!-- Spam Control for the subscription form -->
                     <input type="hidden" name="form-name" value="contact">
                     <p class="hidden">
                         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -72,9 +85,16 @@
                     <input type="submit" value="Subscribe" class="btn btn-primary"
                 </form>
             </div>
+            
         </div>
+
     </section>
-    
+
+    <!-- main body first section  End-->
+
+
+
+    <!-- Second section start -->
     <section class="stats">
         <div class="container">
             <h3 class="stats-heading text-center my-1">
@@ -99,7 +119,10 @@
         </div>
     </section>
 
+    <!-- Second section end -->
+
     <!-- More info TBC CLi temp -->
+
     <section class="cli">
         <div class="container grid">
             <img src="images/cli.png" alt="">

@@ -27,3 +27,23 @@ burger.classList.toggle('toggle');
 
 
 navSlide();
+
+const body = document.querySelector("body");
+        const navigation = document.querySelector(".navigation");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+          navigation.classList.add("show");
+          menuBtn.classList.add("hide");
+          body.classList.add("disabled");
+        }
+        cancelBtn.onclick = ()=>{
+          body.classList.remove("disabled");
+          navigation.classList.remove("show");
+          menuBtn.classList.remove("hide");
+        }
+        window.onscroll = ()=>{
+          this.scrollY > 20 ? navigation.classList.add("sticky") : navigation.classList.remove("sticky");
+        }
+
+body();
